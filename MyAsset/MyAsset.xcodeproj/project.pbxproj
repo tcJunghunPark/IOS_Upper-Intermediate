@@ -11,6 +11,7 @@
 		A77444A527FDC54400F10BFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77444A427FDC54400F10BFF /* ContentView.swift */; };
 		A77444A727FDC54500F10BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77444A627FDC54500F10BFF /* Assets.xcassets */; };
 		A77444AA27FDC54500F10BFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77444A927FDC54500F10BFF /* Preview Assets.xcassets */; };
+		A77444B127FDCA3500F10BFF /* NavigationBarWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77444B027FDCA3500F10BFF /* NavigationBarWithButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A77444A427FDC54400F10BFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A77444A627FDC54500F10BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77444A927FDC54500F10BFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A77444B027FDCA3500F10BFF /* NavigationBarWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWithButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				A77444A227FDC54400F10BFF /* MyAssetApp.swift */,
 				A77444A427FDC54400F10BFF /* ContentView.swift */,
+				A77444B027FDCA3500F10BFF /* NavigationBarWithButton.swift */,
 				A77444A627FDC54500F10BFF /* Assets.xcassets */,
 				A77444A827FDC54500F10BFF /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77444B127FDCA3500F10BFF /* NavigationBarWithButton.swift in Sources */,
 				A77444A527FDC54400F10BFF /* ContentView.swift in Sources */,
 				A77444A327FDC54400F10BFF /* MyAssetApp.swift in Sources */,
 			);
