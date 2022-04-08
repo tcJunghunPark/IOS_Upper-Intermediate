@@ -27,6 +27,8 @@
 		A798EB41280019160057A342 /* AssetSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798EB40280019160057A342 /* AssetSectionHeaderView.swift */; };
 		A798EB4328001AAC0057A342 /* AssetSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798EB4228001AAC0057A342 /* AssetSectionView.swift */; };
 		A798EB4528001D400057A342 /* AssetSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798EB4428001D400057A342 /* AssetSummaryView.swift */; };
+		A798EB482800224B0057A342 /* TabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798EB472800224B0057A342 /* TabMenuView.swift */; };
+		A798EB4A280025420057A342 /* AssetCardSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798EB49280025420057A342 /* AssetCardSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		A798EB40280019160057A342 /* AssetSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSectionHeaderView.swift; sourceTree = "<group>"; };
 		A798EB4228001AAC0057A342 /* AssetSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSectionView.swift; sourceTree = "<group>"; };
 		A798EB4428001D400057A342 /* AssetSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSummaryView.swift; sourceTree = "<group>"; };
+		A798EB472800224B0057A342 /* TabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuView.swift; sourceTree = "<group>"; };
+		A798EB49280025420057A342 /* AssetCardSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				A798EB40280019160057A342 /* AssetSectionHeaderView.swift */,
 				A798EB4228001AAC0057A342 /* AssetSectionView.swift */,
 				A798EB4428001D400057A342 /* AssetSummaryView.swift */,
+				A798EB472800224B0057A342 /* TabMenuView.swift */,
+				A798EB49280025420057A342 /* AssetCardSectionView.swift */,
 			);
 			path = AssetSummaryView;
 			sourceTree = "<group>";
@@ -229,10 +235,12 @@
 				A798EB2E280008AE0057A342 /* AssetBanner.swift in Sources */,
 				A798EB2C280007A80057A342 /* AssetView.swift in Sources */,
 				A77444A527FDC54400F10BFF /* ContentView.swift in Sources */,
+				A798EB482800224B0057A342 /* TabMenuView.swift in Sources */,
 				A77444A327FDC54400F10BFF /* MyAssetApp.swift in Sources */,
 				A72442B128000213004E8EEA /* AssetMenu.swift in Sources */,
 				A798EB3628000D120057A342 /* PageControl.swift in Sources */,
 				A798EB3828000E460057A342 /* AssetBannerView.swift in Sources */,
+				A798EB4A280025420057A342 /* AssetCardSectionView.swift in Sources */,
 				A798EB312800090D0057A342 /* BannerCard.swift in Sources */,
 				A72442B3280003B1004E8EEA /* AssetMenuButtonStyle.swift in Sources */,
 			);
