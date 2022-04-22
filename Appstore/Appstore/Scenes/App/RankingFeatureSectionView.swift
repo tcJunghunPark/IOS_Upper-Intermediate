@@ -112,13 +112,14 @@ private extension RankingFeatureSectionView {
         }
     }
     func fetchData() {
+        
         guard let url = Bundle.main.url(forResource: "RankingFeature", withExtension: "plist") else {
-            print("fetch fail")
             return}
         do{
             let data = try Data(contentsOf: url)
             let result = try PropertyListDecoder().decode([RankingFeature].self, from: data)
             RankingFeatureList = result
+            
         }catch{}
     }
 }
