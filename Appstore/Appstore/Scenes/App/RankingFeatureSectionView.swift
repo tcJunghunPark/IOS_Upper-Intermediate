@@ -9,6 +9,7 @@ import SnapKit
 import UIKit
 
 final class RankingFeatureSectionView: UIView {
+    private var RankingFeatureList: [RankingFeature] = []
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18.0, weight: .black)
@@ -49,6 +50,8 @@ final class RankingFeatureSectionView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
+        fetchData()
+        collectionView.reloadData()
     }
     
     required init?(coder: NSCoder) {
@@ -66,12 +69,13 @@ extension RankingFeatureSectionView: UICollectionViewDelegateFlowLayout {
 }
 extension RankingFeatureSectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        9
+        RankingFeatureList.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RankingFeatureCollectionViewCell", for: indexPath) as? RankingFeatureCollectionViewCell
+        let rankingFeature = RankingFeatureList[indexPath.item]
         
-        cell?.setup()
+        cell?.setup(rankingFeature: rankingFeature)
         return cell ?? UICollectionViewCell()
     }
 }
@@ -106,6 +110,16 @@ private extension RankingFeatureSectionView {
             $0.top.equalTo(collectionView.snp.bottom).offset(16.0)
             $0.bottom.equalToSuperview()
         }
+    }
+    func fetchData() {
+        guard let url = Bundle.main.url(forResource: "RankingFeature", withExtension: "plist") else {
+            print("fetch fail")
+            return}
+        do{
+            let data = try Data(contentsOf: url)
+            let result = try PropertyListDecoder().decode([RankingFeature].self, from: data)
+            RankingFeatureList = result
+        }catch{}
     }
 }
 
